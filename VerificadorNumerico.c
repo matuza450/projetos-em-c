@@ -56,7 +56,7 @@ int main(){
         printf("    Mensagem Especial: O primeiro numero e positivo E o segundo e par!\n\n\n");
     } else {
         printf("    A condicao (primeiro numero ser positivo E o segundo ser par) nao foi atendida.\n");
-    }
+    } 
 
     return 0;
 }
