@@ -1,4 +1,6 @@
-// Software para uma loja de eletrodoméstico    
+// Software para uma loja de eletrodoméstico
+// Desenvolvido por Matheus Henrique
+// Data de criação: 05/10/2025
 
 #include <stdio.h>
 

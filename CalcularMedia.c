@@ -1,4 +1,7 @@
 // Calculo da média de dois numeros
+// Desenvolvido por Matheus Henrique
+// Data de criação: 28/09/2025
+
 
 #include <stdio.h>
 
