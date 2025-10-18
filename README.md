@@ -19,7 +19,7 @@ Abaixo está uma lista de todos os projetos contidos neste repositório.
 | **Orçamento de Pintura** | Calcula a quantidade de tinta e o custo necessário para pintar um cilindro, com base na sua altura e raio.      | [Ver Código](./OrçamentoCilindro.c)                                                                    |
 | **Cálculo de Média** | Um script simples que calcula a média simples entre dois números fornecidos pelo usuário.                   | [Ver Código](./CalcularMedia.c)                                                                        |
 | **Cálculo de Média Aritmética** | Calcula a média aritmética entre três números fornecidos pelo usuário. | [Ver Código](./MediaAritmetica.c) |
-| | **Vizinho Numerico** | Lê um número inteiro e mostra seu sucessor e seu antecessor na tela. | [Ver Código](./VizinhoNumerico.c) | |
+|**Vizinho Numerico** | Lê um número inteiro e mostra seu sucessor e seu antecessor na tela. | [Ver Código](./VizinhoNumerico.c) |
 | **Multiplicador** | Programa em C que calcula e exibe o produto estático entre os números 28 e 43. | [Ver Código](./Multiplicador.c) |
 | *(Novo Projeto Aqui)* | *(Breve descrição do que ele faz)* | *(Link para o novo arquivo .c)* |
 
