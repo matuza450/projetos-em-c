@@ -1,3 +1,7 @@
+// DESENVOLVIDO POR MATHEUS HENRIQUE - NOME DA DISCIPLINA: Lógica de Programação 1 - IFB
+// Criado em 17/10/2025
+
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
