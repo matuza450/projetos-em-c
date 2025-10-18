@@ -2,6 +2,10 @@
 
 Bem-vindo ao meu repositório de projetos acadêmicos e estudos em Linguagem C! Este espaço serve como um "diário de bordo" do meu aprendizado na disciplina de Algoritmos e Programação Estruturada, onde aplico conceitos fundamentais da programação para resolver pequenos problemas.
 
+### Nota sobre a Autoria do Código
+
+Todo o código presente neste repositório foi desenvolvido por mim como parte do meu processo de aprendizado e formação acadêmica. Nenhuma ferramenta de inteligência artificial generativa foi utilizada para a criação ou estruturação das soluções aqui apresentadas. O objetivo deste projeto é documentar e aplicar os conhecimentos adquiridos em aulas, livros e estudos pessoais para aprimorar minhas habilidades em programação.
+
 ---
 
 ## 📂 Tabela de Projetos
