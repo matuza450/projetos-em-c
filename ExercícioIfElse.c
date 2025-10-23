@@ -30,12 +30,17 @@ void exercicio2()
     float a, b;
     float altura;
 
-    printf("\nDigite sua altura: ", altura);
-    scanf("%f", altura);
+    printf("\nDigite sua altura (PESSOA A): ");
+    scanf("%f", a);
+
+    printf("\nDigite sua altura (PESSSOA B): ");
 
     if (a>b) {
-        printf("\nO numero");
+        printf("\nA altura da pessoa A é maior que a altura da pessoa B");
+    } else {
+        printf("\nA altura da pessoa B é maior que a altura da pessoa A");
     }
+
 }
 
 void exercicio3()
@@ -87,6 +92,9 @@ void exercicio5()
     printf("\n---Exercício 05: Faça um programa em “C” que leia os lados de um triângulo retângulo e exiba sua hipotenusa. Se a hipotenusa for maior que 100 escreva, hipotenusa muito grande, caso contrário exiba hipotenusa pequena. ");
 }
 
+void exercicio6(){
+    printf("NAO FOI FEITO");
+}
 main()
 {
     setlocale(LC_ALL, "");
