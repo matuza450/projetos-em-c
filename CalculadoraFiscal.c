@@ -6,6 +6,8 @@
 
 int main(){
 
+    
+
     // Criação das Variáveis
 
     float precoVenda, valorImposto, valorDesconto, precoFinal;
