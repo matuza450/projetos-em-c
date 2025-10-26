@@ -18,12 +18,13 @@ você deve gerar um relatório que inclua o código-fonte.
 #include <iomanip>
 #include <locale.h>
 #include <iostream>
+#include <Windows.h>
 
 using namespace std;
 
 int main()
 {
-    setlocale(LC_ALL, "");
+    setlocale(LC_ALL, ".UTF-8");
     // VARIÁVEIS DE ENTRADA
     char colaborador[100];
     float salarioBruto;
@@ -62,11 +63,11 @@ int main()
     {
         descontoINSS = salarioBruto * INSS_ALIQUOTA_1;
     }
-    else if (salarioBruto > 1320.01 <= 2571.91)
+    else if (salarioBruto <= 2571.91)
     {
         descontoINSS = salarioBruto * INSS_ALIQUOTA_2;
     }
-    else if (salarioBruto > 2571.30 <= 3856.94)
+    else if (salarioBruto <= 3856.94)
     {
         descontoINSS = salarioBruto * INSS_ALIQUOTA_3;
     }
@@ -81,7 +82,7 @@ int main()
 
     // Calcular Base de Cáculo de IR
     // O IR é calculado sobre o salário bruto MENOS o desconto do INSS
-    baseCalculoIR = salarioBruto - descontoINSS
+    baseCalculoIR = salarioBruto - descontoINSS;
 
     if (baseCalculoIR <= 1903.98)
     {
@@ -97,7 +98,7 @@ int main()
     }
     else if (baseCalculoIR <= 4664.68)
     {
-        descontoIR = baseCalculoIR & IR_ALIQUOTA_4;
+        descontoIR = baseCalculoIR * IR_ALIQUOTA_4;
     }
     else
     {
@@ -108,7 +109,7 @@ int main()
 
     cout << fixed << setprecision(2);
 
-    cout << "Relatório de PAgamento: " << colaborador << endl;
+    cout << "Relatório de Pagamento: " << colaborador << endl;
     cout << "Salário Bruto: \t\t R$ " << salarioBruto << endl;
     cout << "---------------------------------" << endl;
     cout << "(-) Desconto INSS: \t R$ " << descontoINSS  << endl;
