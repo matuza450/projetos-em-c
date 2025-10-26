@@ -113,8 +113,8 @@ int main()
     cout << "Salário Bruto: \t\t R$ " << salarioBruto << endl;
     cout << "---------------------------------" << endl;
     cout << "(-) Desconto INSS: \t R$ " << descontoINSS  << endl;
-    cout << "Base de Cálculo do IR> \t R$ " << baseCalculoIR << endl;
-    cout << "(-) Desconto IR: \t R$ " << descontoIR << endl;
+    cout << "Base de Cálculo do Imposto de Renda(IR): \t R$ " << baseCalculoIR << endl;
+    cout << "(-) Desconto Imposto de Renda(IR): \t R$ " << descontoIR << endl;
     cout << "Salário Líquido: \t R$ " << salarioLiquido << endl;
 
     return 0;
