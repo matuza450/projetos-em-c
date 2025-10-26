@@ -41,7 +41,7 @@ int main(){
 	
 	cout << "Digite o nome do cliente: ";
 	
-	cin.getline(nome, 100);
+	cin.getline(nome, 100); 
 	
 	cout << "Olá, " << nome << "! Digite o consumo mensal em kWh: ";
 	cin >> kwhConsumo;
