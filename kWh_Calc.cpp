@@ -26,9 +26,6 @@ Faça um programa em C++ que:
 #include <iostream>
 
 
-
-
-
 using namespace std;
 
 int main(){
