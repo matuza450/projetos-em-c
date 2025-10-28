@@ -38,6 +38,7 @@ int main(){
 	const float tarifa2 = 0.07;
 	const float tarifa3 = 0.09;
 	
+	
 	cout << "Digite o nome do cliente: ";
 	
 	cin.getline(nome, 100); 
