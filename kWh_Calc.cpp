@@ -31,7 +31,6 @@ using namespace std;
 int main(){
 	setlocale(LC_ALL, ".UTF-8");
 	
-	
 	char nome[100];
 	float kwhConsumo;
 	float valorTotal = 0.0;
