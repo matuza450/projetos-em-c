@@ -29,7 +29,7 @@ Faça um programa em C++ que:
 using namespace std;
 
 int main(){
-	setlocale(LC_ALL, "");
+	setlocale(LC_ALL, ".UTF-8");
 	
 	
 	char nome[100];
