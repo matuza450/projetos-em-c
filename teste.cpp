@@ -147,7 +147,7 @@ acima de 600,00             40% do valor do saldo médio
         percentual = 40.0;
     }
 
-    printf("Saldo Médio Informado: R$ %.2f", saldoMedio);
+    printf("Saldo Médio Informado: R$ %.2f\n", saldoMedio);
 
     if (valorCredito == 0){
         printf("Nenhum crédito disponível para esta faixa de saldo\n");
@@ -157,6 +157,52 @@ acima de 600,00             40% do valor do saldo médio
     }
 }
 
+void exercicio5(){
+    /*
+Um vendedor necessita de um programa que calcule o preço total devido por um cliente. O programa
+deve receber o código de um produto e a quantidade comprada e calcular o preço total, usando a
+tabela abaixo. Mostrar uma mensagem no caso de código inválido.
+
+Código Produto          Preço Unitário
+1001                        R$ 5,32
+1324                        R$ 6,45
+6548                        R$ 2,37
+987                         R$ 5,32
+7623                        R$ 6,45
+    */
+
+    int codigoProduto;
+    int quantidade;
+
+    float precoUnitario = 0.0;
+    float precoTotal;
+
+
+    printf("Digite o código do Produto: \n");
+    scanf("%d", &codigoProduto);
+
+    printf("Digite a quantidade comprada: \n");
+    scanf("%d", &quantidade);
+
+    if (codigoProduto == 1001 || codigoProduto == 987){
+        precoUnitario = 5.32;
+    } else if (codigoProduto == 1324 || codigoProduto == 7623){
+        precoUnitario = 6.45;
+    } else if (codigoProduto == 6548){
+        precoUnitario = 2.37;
+    }
+
+    if (precoUnitario == 0){
+        printf("\nErro: Código de produto inválido.\n");
+    } else {
+        precoTotal = precoUnitario * quantidade;
+
+        printf("Preço Unitário: R$%.2f\n", precoUnitario);
+        printf("Quantidade: %d\n", quantidade);
+        printf("Preço Total: R$%.2f\n", precoTotal);
+    }
+
+}
 
 int main(){
     
@@ -173,6 +219,7 @@ int main(){
         printf("2 - Exercício 02\n");
         printf("3 - Exercício 03\n");
         printf("4 - Exercício 04\n");
+        printf("5 - Exercício 05\n");
         printf("0 - Sair\n");         
         printf("Digite sua opção: ");
 
@@ -198,6 +245,10 @@ int main(){
 
             case 4:
                 exercicio4();
+                break;
+
+            case 5:
+                exercicio5();
                 break;
 
             case 0: 
