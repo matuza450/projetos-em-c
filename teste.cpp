@@ -2,13 +2,75 @@
 #include <stdlib.h>
 #include <locale.h>
 
-// Função do exercício 1
+
 void exercicio1(){
-    // ERRO 1 (Corrigido): Faltava o ; no printf
-    printf("\n---- Executando Exercício 1 ----\n");
-    printf("Testes de acentuação: tésésés Á\n");
-    printf("--------------------------------\n");
+    /*
+1. Leia 3 valores inteiros (X, Y, Z), determina e escreve o menor deles.
+    */
+
+    int x,y,z;
+
+    printf("Digite o valor de X: ");
+    scanf("%d", &x);
+
+    printf("Digite o valor de Y: ");
+    scanf("%d", &y);
+
+    printf("Digite o valor de Z: ");
+    scanf("%d", &z);
+
+    int menor = x;
+
+    if(y < menor){
+        menor = y;
+    }
+    if(z < menor){
+        menor = z;
+    }
+    printf("\n\n\nRESPOSTA: O menor numero entre os 3 valores é o (%d)\n\n\n", menor);
+
 }
+
+void exercicio2(){
+    /*
+Desenvolva um algoritmo que efetue a leitura de três valores para os lados de um triângulo,
+considerando lados como: A, B e C. O algoritmo deverá verificar se os lados fornecidos forma
+realmente um triângulo (cada lado é menor que a soma dos outros dois lados). Se for esta condição
+verdadeira, deverá ser indicado qual tipo de triângulo foi formado: isósceles (dois lados iguais e um
+diferente), escaleno (todos os lados diferentes) ou eqüilátero (todos os lados são iguais)
+    */
+
+    int a,b,c;
+
+    printf("Digite o numero do valor A: ");
+    scanf("%d", &a);
+    printf("Digite o numero do valor B: ");
+    scanf("%d", &b);
+    printf("Digite o numero do valor C: ");
+    scanf("%d", &c);
+
+    // conferir os valores se fazem sentindo: 
+    if (a <= 0){
+        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
+    } if (b <= 0){
+        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
+    } if (c <= 0){
+        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
+    }
+
+    // tipos de triangulo
+    if (a == b && b == c){
+        printf("É equilátero");
+    }
+    if (a == b && a != c){
+        printf("Isósceles");
+    }
+    if (a != b && b != c && a != c){
+        printf("É escaleno");
+    }
+}
+
+
 
 
 int main(){
