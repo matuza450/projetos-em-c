@@ -11,6 +11,8 @@ int main(){
     float salarioBase;
     float salarioTotal = 0;
 
+    int categoriaValida = 1;
+
     printf("Digite sua Categoria(Ex: A, B ,C): ");
     scanf("%c", &categoria);
 
@@ -40,7 +42,10 @@ int main(){
 
         default:
             printf("Erro: Categoria inválida\n");
+            categoriaValida = 0;
+            break;
         
     }
+
 
 }
