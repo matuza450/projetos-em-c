@@ -50,23 +50,26 @@ diferente), escaleno (todos os lados diferentes) ou eqüilátero (todos os lados
     scanf("%d", &c);
 
     // conferir os valores se fazem sentindo: 
-    if (a <= 0){
-        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
-    } if (b <= 0){
-        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
-    } if (c <= 0){
-        printf("Erro: Comprimento negativo ou zero / não faz sentindo. ");
+    if (a <= 0 || b <= 0 || c <= 0){
+        printf("Erro: todos os lados devem ser maiores que zero. \n\n");
+        
+    }
+
+    // verificar se realmente forma um triangulo
+    if (a >= b + c || b >= c + a || c >= a + b){
+        printf("Os valores informados não forma um triangulo\n\n");
+        
     }
 
     // tipos de triangulo
     if (a == b && b == c){
-        printf("É equilátero");
+        printf("É equilátero\n");
     }
     if (a == b && a != c){
-        printf("Isósceles");
+        printf("Isósceles\n");
     }
     if (a != b && b != c && a != c){
-        printf("É escaleno");
+        printf("É escaleno\n");
     }
 }
 
@@ -83,6 +86,7 @@ int main(){
         printf("\n\n---- MENU DE EXERCÍCIO C ---\n");
         printf("Escolha um exercício para executar:\n");
         printf("1 - Exercício 01\n"); 
+        printf("2 - Exercício 02\n");
         printf("0 - Sair\n");         
         printf("Digite sua opção: ");
 
@@ -97,6 +101,11 @@ int main(){
                 exercicio1(); 
                 break;
             
+
+            case 2:
+                exercicio2();
+                break;
+
             case 0: 
                 printf("Saindo do programa...\n");
                 break;
