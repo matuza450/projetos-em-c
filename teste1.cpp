@@ -47,5 +47,15 @@ int main(){
         
     }
 
+    if (categoriaValida == 1){
+        salarioTotal = salarioBase * valorBonus;
+
+        printf("\n---- FOLHA DE PAGAMENTO ----\n");
+        printf("Salário Base: R$ %.2f\n", salarioBase);
+        printf("Valor do Bônus: R$%.2f\n", valorBonus);
+        printf("Salário Total: R$%.2f\n", salarioTotal);
+    }
+
+    return 0;
 
 }
