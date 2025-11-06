@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
+#include <iostream>
 
+using namespace std;
 
 void exercicio1(){
     /*
@@ -108,9 +110,58 @@ programa que leia o índice de poluição
 
 }
 
+void exercicio4(){
+
+    /*
+Um Banco concederá um crédito especial aos seus clientes, variável com o saldo médio no último
+ano. Faça um algoritmo que leia o saldo médio de um cliente e calcule o valor do crédito de acordo
+com a tabela abaixo. Mostre uma mensagem informando o saldo médio e o valor do crédito.
+
+Saldo médio                     Percentual
+de 0 a 200,00               nenhum crédito (crédito = 0)
+de 201,00 a 400,00          20% do valor do saldo médio
+de 401,00 a 600,00          30% do valor do saldo médio
+acima de 600,00             40% do valor do saldo médio
+    */
+
+    float saldoMedio;
+
+    float valorCredito = 0;
+    float percentual = 0;
+
+    printf("Digite seu saldo Médio: \n");
+    scanf("%f", &saldoMedio);
+
+    if (saldoMedio >= 0 && saldoMedio <= 200.00){
+        valorCredito = 0.0;
+        percentual = 0.0;
+
+    } else if (saldoMedio <= 400.00){
+        valorCredito = saldoMedio * 0.20;
+        percentual = 20.0;
+    } else if (saldoMedio <= 600.00){
+        valorCredito = saldoMedio * 0.30;
+        percentual = 30.0;
+    } else {
+        valorCredito = saldoMedio * 0.40;
+        percentual = 40.0;
+    }
+
+    printf("Saldo Médio Informado: R$ %.2f", saldoMedio);
+
+    if (valorCredito == 0){
+        printf("Nenhum crédito disponível para esta faixa de saldo\n");
+    } else {
+        printf("Percentual aplicado: %.0f%%\n", percentual);
+        printf("Valor do Crédito Aprovado: R$ %.2f\n", valorCredito);
+    }
+}
+
 
 int main(){
+    
     int opcao;
+    
     
 
     setlocale(LC_ALL, "");
@@ -121,6 +172,7 @@ int main(){
         printf("1 - Exercício 01\n"); 
         printf("2 - Exercício 02\n");
         printf("3 - Exercício 03\n");
+        printf("4 - Exercício 04\n");
         printf("0 - Sair\n");         
         printf("Digite sua opção: ");
 
@@ -142,6 +194,10 @@ int main(){
 
             case 3:
                 exercicio3();
+                break;
+
+            case 4:
+                exercicio4();
                 break;
 
             case 0: 
