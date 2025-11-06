@@ -1,3 +1,5 @@
+// Exercícios: Algoritmos Condicionais – Lista III
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <locale.h>
@@ -201,6 +203,43 @@ Código Produto          Preço Unitário
         printf("Quantidade: %d\n", quantidade);
         printf("Preço Total: R$%.2f\n", precoTotal);
     }
+
+}
+
+
+void exercicio6(){
+    /*
+Ler um número inteiro, e verificar se o número corresponde a um mês válido no calendário e
+escrever o nome do mês, senão escrever uma mensagem ‘Mês Inválido’.
+    */
+   int numero;
+
+   switch(numero){
+    case 1:
+        printf("Janeiro");
+    case 2:
+        printf("Fevereiro");
+    case 3:
+        printf("Março");
+    case 4:
+        printf("Abril");
+    case 5:
+        printf("Maio");
+    case 6:
+        printf("Junho");
+    case 7:
+        printf("Julho");
+    case 8:
+        printf("Agosto");
+    case 9:
+        printf("Setembro");
+    case 10:
+        printf("Outubro");
+    case 11:
+        printf("Novembro");
+    case 12:
+        printf("Dezembro");
+   }
 
 }
 
